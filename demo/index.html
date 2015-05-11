@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Galeria ADFO</title>
+<link rel="icon" href="img/faviconaf.ico" />
+<style type="text/css">
+body{padding-bottom:10px;}
+h1{
+width:98%;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:18px;
+float:left;
+margin-left:1%;	
+}
+p{
+width:98%;
+font-family:Verdana, Geneva, sans-serif;
+text-align:justify;
+font-size:12px;
+float:left;
+margin-left:1%;	
+}
+a{
+	width:24%;
+text-decoration:none;
+border:0px solid;
+float:left;
+margin-left:0.5%;
+height:120px;	
+margin-top:2px;
+overflow:hidden;
+	}
+img{
+	width:100%;
+	height:auto;
+	border:0px solid;
+	opacity:0.85;
+}
+.logo{width:10%;
+height:auto;
+float:left;
+margin-left:45%;
+margin-right:45%;
+margin-top:2px;
+}
+a:hover img{opacity:1;}
+@media (max-width:760px) {
+a{
+	width:24%;
+height:100px;
+margin-left:0.5%;	
+	}
+}
+@media (max-width:640px) {
+a{
+	width:32%;
+height:90px;
+margin-left:0.5%;	
+	}
+}
+@media (max-width:480px) {
+a{
+	width:49%;
+height:80px;
+margin-left:0.5%;	
+	}
+}
+@media (max-width:320px) {
+a{
+	width:99%;
+height:70px;
+margin-left:0.5%;	
+	}
+}
+</style>
+<!--GALERIA ADFO-->
+<link rel="stylesheet" type="text/css" href="css/galeriaadfo.css" />
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/galeriaadfo.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function(e) {
+    $('.galeria1').galeriaadfo();
+	$('.galeria2').galeriaadfo({duracionanimacion:100,transicion:"azar",animacionentrada:"entradaimg3"});
+});
+</script>
+</head>
+
+<body>
+<h1>GALERIA ADFO</h1>
+<img class="logo" alt="andresflorez12" src="img/logo.png" />
+<h1>JUEGOS</h1>
+<p>Vinculos Internos</p>
+<a href="img/imagen1.jpg" title="Este es el personaje principal y se llama Kratos" data-title="Juegos" id="God of War" class="galeria1">
+<img src="img/imagen1.jpg" />
+</a>
+<a href="img/imagen2.jpg" title="Disfruta con Dante cazando Demonios" data-title="Juegos" id="Devil May Cry" class="galeria1">
+<img src="img/imagen2.jpg" />
+</a>
+<a href="img/imagen3.jpg" title="Juega partidos de Futbol con tu equipo favorito" data-id="Album" id="FIFA EA" class="galeria1">
+<img src="img/imagen3.jpg" />
+</a>
+<a href="img/imagen4.jpg" title="Disfruta de esta aventura en un mundo de lucha" data-title="Juegos" id="WORLD OF WARCRAFT" class="galeria1">
+<img src="img/imagen4.jpg" />
+</a>
+<a href="img/imagen5.jpg" title="Crea tu imperio y conquista a los demas" data-title="Juegos" id="AGE OF EMPIRES" class="galeria1">
+<img src="img/imagen5.jpg" />
+</a>
+<a href="img/imagen6.jpg" title="Se un asesino por una buena causa xD" data-title="Juegos" id="ASSASIN CREED" class="galeria1">
+<img src="img/imagen6.jpg" />
+</a>
+<a href="img/imagen7.jpg" title="Conduce los mejores autos en grandes pistas" data-title="Juegos" id="NEED FOR SPEED WORLD" class="galeria1">
+<img src="img/imagen7.jpg" />
+</a>
+<a href="img/imagen8.jpg" title="Ayuda a Athena con sus santos recorriendo las 12 casas" data-title="Juegos" id="SAINT SEIYA: SANCTUARY BATTLE" class="galeria1">
+<img src="img/imagen8.jpg" />
+</a>
+<h1>FERRARIS</h1>
+<p>Vinculos Externos</p>
+<a href="http://news.boldride.com/wp-content/uploads/2014/08/Ferrari-F80-Concept.jpg" title="Este auto me impresiona por su color" data-title="Ferraris" id="Ferrari Rojo" class="galeria2">
+<img src="http://news.boldride.com/wp-content/uploads/2014/08/Ferrari-F80-Concept.jpg" />
+</a>
+<a href="http://img.izismile.com/img/img2/20090824/gold_ferrari_14.jpg" title="Este auto en mi pais se lo roban" data-title="Ferraris" id="Ferrari Dorado" class="galeria2">
+<img src="http://img.izismile.com/img/img2/20090824/gold_ferrari_14.jpg" />
+</a>
+<a href="http://i685.photobucket.com/albums/vv219/jin028/ferrari.jpg" title="Este auto es mi sueño" data-title="Ferraris" id="Ferrari Negro" class="galeria2">
+<img src="http://i685.photobucket.com/albums/vv219/jin028/ferrari.jpg" />
+</a>
+<a href="http://cochescompeticion.com/wp-content/uploads/2009/12/FERRARI.jpg" title="Con lo que tengo esto es lo que puedo comprar" data-title="Ferraris" id="Ferrari Replicas" class="galeria2">
+<img src="http://cochescompeticion.com/wp-content/uploads/2009/12/FERRARI.jpg" />
+</a>
+<h1>¿Cómo implementarlo?</h1>
+<p><b>La galería</b>
+<br  />
+Decidi quitar el uso de la lista para hacerlo directamente con la etiqueta a, la cual contiene nuestro contenido:
+<br />
+<textarea style="width:100%;height:60px; padding-bottom:4px; padding-top:4px; border:0px solid;">
+<a href="img/imagen.jpg" title="Descripción de la Imagen" data-title="Album" id="Id de la imagen" class="galeria">
+<img src="img/imagen.jpg" />
+</a>
+</textarea>
+<br />
+De esta forma vamos creando los vinculos de las imagenes y las vamos insertando.
+<b>Los archivos necesarios</b>
+<br  />
+Para desarrollar esta galería necesitas los siguientes archivos:
+- El CSS
+- El script jQuery
+- El script de la galeriaadfo
+<br />
+<textarea style="width:100%;height:60px; padding-bottom:4px; padding-top:4px; border:0px solid;"><link rel="stylesheet" type="text/css" href="css/galeriaadfo.css" />
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/galeriaadfo.js"></script>
+</textarea>
+<br />
+Una vez terminado esto, y teniendo ya la galería lista podemos ya instanciar nuestra galería, los // dividen las formas para hacer la galería.
+<br />
+<textarea style="width:100%;height:140px; padding-bottom:4px; padding-top:4px; border:0px solid;">
+<script type="text/javascript" language="javascript">
+$(document).ready(function(e) {
+	//de esta forma
+    $('.galeria').galeriaadfo();
+	// o de esta forma
+	$('.galeria').galeriaadfo({duracionanimacion:100,transicion:"azar",animacionentrada:"entradaimg3"});
+});
+</script>
+</textarea>
+<br />
+Para hacerla mejor y quede mas claro, dare un ejemplo el cual ustedes ven en la segunda galería.
+<textarea style="width:100%;height:620px; padding-bottom:4px; padding-top:4px; border:0px solid;">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Galeria ADFO</title>
+<style type="text/css">
+<!--Los dejo a tu gusto-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/galeriaadfo.css" />
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/galeriaadfo.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function(e) {
+	//puedes usar el primero y usar las opciones por defecto
+    //$('.galeria2').galeriaadfo();
+	//usar el segundo y poner tus opciones, recuerda, que puedes quitar los comentarios, pero debe ser una sola opción.
+	$('.galeria2').galeriaadfo({duracionanimacion:100,transicion:"azar",animacionentrada:"entradaimg3"});
+});
+</script>
+</head>
+<body>
+<h1>FERRARIS</h1>
+<a href="http://news.boldride.com/wp-content/uploads/2014/08/Ferrari-F80-Concept.jpg" title="Este auto me impresiona por su color" data-title="Ferraris" id="Ferrari Rojo" class="galeria2">
+<img src="http://news.boldride.com/wp-content/uploads/2014/08/Ferrari-F80-Concept.jpg" />
+</a>
+<a href="http://img.izismile.com/img/img2/20090824/gold_ferrari_14.jpg" title="Este auto en mi pais se lo roban" data-title="Ferraris" id="Ferrari Dorado" class="galeria2">
+<img src="http://img.izismile.com/img/img2/20090824/gold_ferrari_14.jpg" />
+</a>
+<a href="http://i685.photobucket.com/albums/vv219/jin028/ferrari.jpg" title="Este auto es mi sueño" data-title="Ferraris" id="Ferrari Negro" class="galeria2">
+<img src="http://i685.photobucket.com/albums/vv219/jin028/ferrari.jpg" />
+</a>
+<a href="http://cochescompeticion.com/wp-content/uploads/2009/12/FERRARI.jpg" title="Con lo que tengo esto es lo que puedo comprar" data-title="Ferraris" id="Ferrari Replicas" class="galeria2">
+<img src="http://cochescompeticion.com/wp-content/uploads/2009/12/FERRARI.jpg" />
+</a>
+</body>
+</html>
+</textarea>
+<br />
+Una vez que ya sepas eso, dejare aqui las opciones que puedes modificar.
+<br />
+duracionanimacion:150, //Duración de las animaciones o transiciones en milisegundos
+<br />
+animacionentrada:"entradaimg0",  //animacion de la entrada de imagen entradaimg0,entradaimg1,entradaimg2,entradaimg3,azar 
+<br />
+cambioimagen:"animacion",  //se activa cuando se cambia la imagen con las flechas de navagación, animacion/transicion
+<br />
+transicion:"linear", //transicion que se toma ya sea en animacion o en transicion ease/linear/ease-in/ease-out/ease-in-out/azar
+<br />
+animacioncambioimagen:"perseguir"   //si no es transicion se hara animacion, rebote/perseguir/aumentarreducir/azar
+<br />
+Esas son las opciones a modificar, gracias por probar este plugin, dale me gusta si lo ves en facebook y te parecio increible, si no espero sus comentarios.
+</p>
+
+
+</body>
+</html>
